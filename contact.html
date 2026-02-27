@@ -1,168 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Titanium3d Print - Precision Metal Parts, Printed to Perfection">
-    <meta name="keywords" content="3d metal printing, titanium3dprint, metal, printing, professional services, quality, innovation, max davis, ben stagl, ally reza, chilab, chilab studio, titobi, chicago, manufacturing, functional, 3d, prototype">
-    <meta property="og:title" content="Titanium3d Print | Precision Metal Parts, Printed to Perfection">
-    <meta property="og:description" content="Contact Titanium3d Print - Precision Metal Parts, Printed to Perfection">
-    <meta name="author" content="Max Davis, Ben Stagl, Ally Reza - ChiLab Studio">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1592231752639-4a7ffcbc1505?w=600&q=80">
-    <title>Contact Titanium3d Print</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Ti3D Aerospace | Titanium 3D Printing Quote</title>
+  <meta name="description" content="Get a free DFM analysis and quote for your titanium 3D printing project. Contact our engineering team today.">
+  <link rel="stylesheet" href="shared-metal3d-styles.css">
+  <style>
+    :root {
+      --primary-color: #607D8B;
+      --secondary-color: #455A64;
+      --accent-color: #90CAF9;
+    }
+
+    .navbar-brand {
+      color: var(--primary-color);
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .navbar-nav a::after {
+      background-color: var(--primary-color);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #455A64 0%, #607D8B 50%, #78909C 100%);
+      min-height: 300px;
+    }
+
+    .form-submit {
+      background: linear-gradient(135deg, #455A64, #607D8B);
+    }
+
+    .form-submit:hover {
+      background: linear-gradient(135deg, #37474F, #455A64);
+    }
+
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(96, 125, 139, 0.1);
+    }
+
+    .contact-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .contact-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 1rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      background: linear-gradient(135deg, #455A64, #607D8B);
+      color: white;
+    }
+
+    .contact-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .contact-info {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .contact-info a {
+      color: var(--primary-color);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="grain-overlay"></div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">Ti3D Aerospace</div>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-nav">
+        <li><a href="titanium3dprint-index.html">Home</a></li>
+        <li><a href="titanium3dprint-about.html">About</a></li>
+        <li><a href="titanium3dprint-services.html">Services</a></li>
+        <li><a href="titanium3dprint-contact.html" class="cta-button">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <header class="site-header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html" class="nav-logo">
-                    <span class="logo-bracket">[</span><span class="logo-text">Titanium3d Print</span><span class="logo-bracket">]</span>
-                </a>
-                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background"><img src="images/01-titanium-turbine.png" alt="Metal 3D Printing" loading="lazy"><div class="hero-overlay"></div></div><div class="hero-content">
+      <h1>Get in Touch</h1>
+      <p>Request a quote or design consultation for your titanium 3D printing project</p>
+    </div>
+  </section>
 
-    <main>
-        <section class="page-hero">
-            <div class="page-hero-bg">
-                <img src="https://images.unsplash.com/photo-1592231752639-4a7ffcbc1505?w=600&q=80" alt="Contact Titanium3d Print" loading="lazy">
-                <div class="page-hero-overlay"></div>
-            </div>
-            <div class="page-hero-content">
-                <h1>Contact Us</h1>
-                <p class="page-hero-subtitle">Get in touch with our team to discuss your 3d metal printing needs</p>
-            </div>
-        </section>
+  <!-- Contact Content -->
+  <section>
+    <div class="container">
+      <div class="grid grid-2">
+        <div>
+          <h2>Contact Information</h2>
 
-        <section class="contact-section">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info animate-in">
-                        <h2>Let&rsquo;s Start a Conversation</h2>
-                        <p>Whether you have a question about our services, need a custom quote, or want to discuss a potential project, our team is ready to help.</p>
-                        <div class="contact-cards">
-                            <div class="contact-card">
-                                <div class="contact-card-icon">&#128338;</div>
-                                <h4>Business Hours</h4>
-                                <p>Monday &ndash; Friday: 9:00 AM &ndash; 5:00 PM EST</p>
-                            </div>
-                            <div class="contact-card">
-                                <div class="contact-card-icon">&#9993;</div>
-                                <h4>Response Time</h4>
-                                <p>We typically respond within 24 business hours.</p>
-                            </div>
-                            <div class="contact-card">
-                                <div class="contact-card-icon">&#9742;</div>
-                                <h4>Direct Contact</h4>
-                                <p>info@titanium3dprint.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form-wrapper animate-in">
-                        <h2>Request a Quote</h2>
-                        <form action="https://formspree.io/f/xyzformid" method="POST" enctype="multipart/form-data" class="contact-form" id="rfqForm">
-                            <div class="form-group">
-                                <label for="name">Full Name <span class="required">*</span></label>
-                                <input type="text" id="name" name="name" required placeholder="Your full name">
-                                <div class="form-error" id="name-error"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address <span class="required">*</span></label>
-                                <input type="email" id="email" name="email" required placeholder="your@email.com">
-                                <div class="form-error" id="email-error"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="company">Company</label>
-                                <input type="text" id="company" name="company" placeholder="Your company name">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message <span class="required">*</span></label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
-                                <div class="form-error" id="message-error"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="attachment">Attach File (optional)</label>
-                                <input type="file" id="attachment" name="attachment">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-large btn-submit">Send Message</button>
-                        </form>
-                    </div>
+          <div class="contact-card" style="box-shadow: none; padding: 0; background: transparent; text-align: left;">
+            <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+              <div class="contact-icon" style="margin: 0; flex-shrink: 0;">📞</div>
+              <div>
+                <div class="contact-title">Phone</div>
+                <div class="contact-info">
+                  <a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                  Monday-Friday: 8 AM - 6 PM EST
                 </div>
+              </div>
             </div>
-        </section>
 
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Prefer to Talk?</h2>
-                <p>Our team is available to discuss your project directly.</p>
-                <a href="mailto:info@titanium3dprint.com" class="btn btn-large">Email Us Directly</a>
+            <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+              <div class="contact-icon" style="margin: 0; flex-shrink: 0;">✉️</div>
+              <div>
+                <div class="contact-title">Email</div>
+                <div class="contact-info">
+                  <a href="mailto:info@ti3daerospace.com">info@ti3daerospace.com</a><br>
+                  <a href="mailto:quote@ti3daerospace.com">quote@ti3daerospace.com</a>
+                </div>
+              </div>
             </div>
-            <div class="cta-background">
-                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Titanium3d Print" loading="lazy">
-            </div>
-        </section>
-    </main>
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <div class="footer-logo">Titanium3d Print</div>
-                    <p>Precision Metal Parts, Printed to Perfection</p>
+            <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+              <div class="contact-icon" style="margin: 0; flex-shrink: 0;">📍</div>
+              <div>
+                <div class="contact-title">Headquarters</div>
+                <div class="contact-info">
+                  Ti3D Aerospace, Inc.<br>
+                  Industrial Park, Building 7<br>
+                  Advanced Manufacturing District<br>
+                  USA
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="services.html">Service 1</a></li>
-                            <li><a href="services.html">Service 2</a></li>
-                            <li><a href="services.html">Service 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li>info@titanium3dprint.com</li>
-                        </ul>
-                    </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1.5rem;">
+              <div class="contact-icon" style="margin: 0; flex-shrink: 0;">🌐</div>
+              <div>
+                <div class="contact-title">Web</div>
+                <div class="contact-info">
+                  <a href="#">www.ti3daerospace.com</a><br>
+                  Live chat available on website
                 </div>
+              </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Titanium3d Print. All rights reserved.</p>
-            </div>
+          </div>
+
+          <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Quick Response Times</h3>
+          <ul class="feature-list">
+            <li>Phone inquiries: Response within 2 hours (business hours)</li>
+            <li>Quote requests: Detailed response within 24 hours</li>
+            <li>Design consultation: Scheduled within 48 hours</li>
+            <li>Emergency/Rush: Available 24/7 for critical projects</li>
+          </ul>
         </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+        <div>
+          <h2>Request a Quote</h2>
+
+          <form id="contact-form">
+            <input type="hidden" name="from_name" value="Ti3D Aerospace Contact Form">
+            <input type="hidden" name="redirect" value="https://www.ti3daerospace.com/thank-you.html">
+
+            <div class="form-message"></div>
+
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="industry">Industry *</label>
+              <select id="industry" name="industry" class="form-control" required>
+                <option value="">-- Select Industry --</option>
+                <option value="aerospace">Aerospace & Defense</option>
+                <option value="medical">Medical Devices</option>
+                <option value="automotive">Automotive</option>
+                <option value="industrial">Industrial Manufacturing</option>
+                <option value="research">Research & Academia</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="project-type">Project Type *</label>
+              <select id="project-type" name="project_type" class="form-control" required>
+                <option value="">-- Select Type --</option>
+                <option value="prototype">Prototype Development</option>
+                <option value="production">Low Volume Production (1-10 units)</option>
+                <option value="medium-volume">Medium Volume (10-100 units)</option>
+                <option value="high-volume">High Volume (100+ units)</option>
+                <option value="consultation">Design Consultation Only</option>
+                <option value="dfm-analysis">DFM Analysis Only</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline">Project Timeline *</label>
+              <select id="timeline" name="timeline" class="form-control" required>
+                <option value="">-- Select Timeline --</option>
+                <option value="immediate">Immediate (Rush)</option>
+                <option value="1-2-weeks">1-2 Weeks</option>
+                <option value="1-month">1 Month</option>
+                <option value="2-3-months">2-3 Months</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Description *</label>
+              <textarea id="message" name="message" class="form-control" required placeholder="Tell us about your project, material requirements, tolerances, and any specific challenges..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="cad-files">CAD Files (Optional)</label>
+              <input type="text" id="cad-files" name="cad_files" class="form-control" placeholder="File names or attach via email after form submission">
+            </div>
+
+            <div class="form-group">
+              <label for="volume">Estimated Part Volume (cubic inches)</label>
+              <input type="text" id="volume" name="volume" class="form-control" placeholder="Approximate size for initial quote">
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Estimated Budget Range</label>
+              <select id="budget" name="budget" class="form-control">
+                <option value="">-- Select Range --</option>
+                <option value="under-500">Under $500</option>
+                <option value="500-2000">$500 - $2,000</option>
+                <option value="2000-5000">$2,000 - $5,000</option>
+                <option value="5000-10000">$5,000 - $10,000</option>
+                <option value="10000-50000">$10,000 - $50,000</option>
+                <option value="50000-plus">$50,000+</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 2rem;">
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                <input type="checkbox" name="subscribe" value="yes">
+                Subscribe to our monthly newsletter for industry insights and case studies
+              </label>
+            </div>
+
+            <button type="submit" class="form-submit">Send Inquiry</button>
+
+            <p style="font-size: 0.85rem; color: #999; margin-top: 1rem;">
+              * Required fields. We'll respond within 24 hours with a detailed quote and timeline.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Ti3D -->
+  <section style="background: #f8f9fa;">
+    <div class="container">
+      <h2>Why Partner with Ti3D Aerospace?</h2>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon" style="background: #E3F2FD; color: #01579B;">⚡</div>
+          <h3>Rapid Response</h3>
+          <p>DFM analysis within 24 hours. Design consultation scheduled within 48 hours. Rush services available for critical projects.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background: #FCE4EC; color: #880E4F;">✅</div>
+          <h3>Expert Engineering</h3>
+          <p>Our team includes aerospace specialists and medical device engineers. Average 15+ years industry experience with DMLS titanium.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background: #FFF3E0; color: #E65100;">📊</div>
+          <h3>Transparent Pricing</h3>
+          <p>No hidden costs. Detailed quotes explain material, labor, and post-processing. Fixed pricing through production.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background: #F3E5F5; color: #4A148C;">🏆</div>
+          <h3>Quality Guaranteed</h3>
+          <p>ISO 9001:2015 certified. Medical device ASTM F136 compliance. 100% CT scanning available. Certified material testing included.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background: #E0F2F1; color: #004D40;">🔒</div>
+          <h3>IP Protection</h3>
+          <p>ITAR registered and compliant. Confidentiality agreements standard. Your designs secured with us.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background: #F1F8E9; color: #33691E;">🌍</div>
+          <h3>Global Reach</h3>
+          <p>Three production facilities across North America. International shipping available. Local support for major accounts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+
+      <div style="display: grid; gap: 1.5rem; margin-top: 2rem;">
+        <div>
+          <h4>What information do I need to provide for a quote?</h4>
+          <p>Ideally, CAD files (STEP, IGES, or STL). At minimum: part dimensions, material requirements, tolerances, and application. We can work with sketches for initial consultation.</p>
+        </div>
+
+        <div>
+          <h4>How long does the manufacturing process take?</h4>
+          <p>Standard turnaround: 3-4 weeks. Expedited (1-2 weeks available with 25% surcharge. Timeline includes build, stress relief, HIP (if needed), finishing, and testing.</p>
+        </div>
+
+        <div>
+          <h4>Do you offer HIP treatment?</h4>
+          <p>Yes. HIP (Hot Isostatic Pressing) is included in our medical device services. Optional for aerospace applications. Eliminates residual porosity, achieving 100% density.</p>
+        </div>
+
+        <div>
+          <h4>What certifications do you maintain?</h4>
+          <p>ISO 9001:2015, ISO 5832-3 (medical titanium), ASTM F136 (medical devices), ITAR (defense), AMS 4928 (aerospace).</p>
+        </div>
+
+        <div>
+          <h4>Can you manufacture patient-specific medical implants?</h4>
+          <p>Yes. We work with medical device companies to convert CT scans into CAD, then produce custom-fitted titanium implants with full biocompatibility verification.</p>
+        </div>
+
+        <div>
+          <h4>What's the minimum order quantity?</h4>
+          <p>One part. We consolidate builds to optimize costs. Batch consolidation passes savings to customers when possible.</p>
+        </div>
+
+        <div>
+          <h4>Do you offer design optimization services?</h4>
+          <p>Yes. Our DFM (Design for Manufacturability) analysis is free with quote requests. Topology optimization and lattice structure design available as paid consulting services.</p>
+        </div>
+
+        <div>
+          <h4>How do I send CAD files securely?</h4>
+          <p>Email to quote@ti3daerospace.com (encrypted), or use our secure file upload portal on request. We maintain strict IP confidentiality agreements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background: linear-gradient(135deg, #455A64, #607D8B); color: white; text-align: center;">
+    <div class="container">
+      <h2 style="color: white;">Ready to Start?</h2>
+      <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 2rem;">Send us your CAD files and project details above, or call us directly at +1 (555) 123-4567</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Ti3D Aerospace</h4>
+        <p>Premium titanium 3D printing for aerospace, medical, and advanced manufacturing.</p>
+        <div class="social-links">
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="Twitter">𝕏</a>
+          <a href="#" title="Email">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="titanium3dprint-index.html">Home</a>
+        <a href="titanium3dprint-about.html">About</a>
+        <a href="titanium3dprint-services.html">Services</a>
+        <a href="titanium3dprint-contact.html">Contact</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <a href="titanium3dprint-services.html#services">Design & DFM</a>
+        <a href="titanium3dprint-services.html#services">DMLS Production</a>
+        <a href="titanium3dprint-services.html#services">Medical Devices</a>
+        <a href="titanium3dprint-services.html#services">Aerospace Parts</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Support</h4>
+        <a href="#faq">FAQ</a>
+        <a href="#">Documentation</a>
+        <a href="#">Design Guidelines</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ti3D Aerospace. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </div>
+  </footer>
+
+  <script src="shared-metal3d-scripts.js"></script>
 </body>
 </html>

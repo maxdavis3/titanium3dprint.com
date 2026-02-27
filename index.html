@@ -1,224 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Titanium3d Print - Precision Metal Parts, Printed to Perfection. Professional services and solutions for 3d metal printing. Contact us today for a free consu...">
-    <meta name="keywords" content="3d metal printing, titanium3dprint, metal, printing, professional services, quality, innovation, max davis, ben stagl, ally reza, chilab, chilab studio, titobi, chicago, manufacturing, functional, 3d, prototype">
-    <meta property="og:title" content="Titanium3d Print | Precision Metal Parts, Printed to Perfection">
-    <meta property="og:description" content="Titanium3d Print - Precision Metal Parts, Printed to Perfection. Professional services and solutions for 3d metal printing. Contact us today for a free consu...">
-    <meta name="author" content="Max Davis, Ben Stagl, Ally Reza - ChiLab Studio">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1592231752639-4a7ffcbc1505?w=600&q=80">
-    <title>Titanium3d Print | Precision Metal Parts, Printed to Perfection</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titanium 3D Printing | Aerospace & Medical Grade Parts | Ti6Al4V Precision</title>
+  <meta name="description" content="Premium titanium 3D printing services. Ti6Al4V, medical-grade implants, aerospace components with 993-1055 MPa tensile strength.">
+  <link rel="stylesheet" href="shared-metal3d-styles.css">
+  <style>
+    :root {
+      --primary-color: #607D8B;
+      --secondary-color: #455A64;
+      --accent-color: #90CAF9;
+    }
+
+    .navbar-brand {
+      color: var(--primary-color);
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .navbar-nav a::after {
+      background-color: var(--primary-color);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #455A64 0%, #607D8B 50%, #78909C 100%);
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,300 Q300,250 600,300 T1200,300" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none"/></svg>');
+      opacity: 0.3;
+    }
+
+    .card {
+      border-top-color: var(--primary-color);
+    }
+
+    .card:hover {
+      border-top-color: var(--accent-color);
+    }
+
+    .feature-list li::before {
+      color: var(--primary-color);
+    }
+
+    .stat-number {
+      background: linear-gradient(135deg, #455A64, #607D8B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .timeline::before {
+      background: linear-gradient(180deg, #455A64, #607D8B, #78909C);
+    }
+
+    .timeline-dot {
+      border-color: var(--primary-color);
+    }
+
+    .specs-table thead {
+      background: linear-gradient(135deg, #455A64, #607D8B);
+    }
+
+    .form-control:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(96, 125, 139, 0.1);
+    }
+
+    .form-submit {
+      background: linear-gradient(135deg, #455A64, #607D8B);
+    }
+
+    .form-submit:hover {
+      background: linear-gradient(135deg, #37474F, #455A64);
+    }
+
+    .testimonial {
+      border-left-color: var(--primary-color);
+    }
+
+    /* Titanium-specific animations */
+    @keyframes shine {
+      0% { background-position: -1000px 0; }
+      100% { background-position: 1000px 0; }
+    }
+
+    .material-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .material-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      animation: shine 3s infinite;
+    }
+  </style>
 </head>
 <body>
-    <div class="grain-overlay"></div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">Ti3D Aerospace</div>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-nav">
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#applications">Applications</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="titanium3dprint-contact.html" class="cta-button">Get Quote</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <header class="site-header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html" class="nav-logo">
-                    <span class="logo-bracket">[</span><span class="logo-text">Titanium3d Print</span><span class="logo-bracket">]</span>
-                </a>
-                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background"><img src="images/01-titanium-turbine.png" alt="Metal 3D Printing" loading="lazy"><div class="hero-overlay"></div></div><div class="hero-content">
+      <h1>Precision Titanium 3D Printing</h1>
+      <p>Medical-grade Ti6Al4V implants and aerospace components with tensile strength up to 1055 MPa</p>
+      <div class="hero-cta">
+        <a href="#materials" class="btn btn-primary">Explore Materials</a>
+        <a href="titanium3dprint-contact.html" class="btn btn-secondary">Request Sample</a>
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <section class="hero">
-            <div class="hero-background">
-                <img src="https://images.unsplash.com/photo-1592231752639-4a7ffcbc1505?w=600&q=80" alt="Titanium3d Print" loading="lazy">
-                <div class="hero-overlay"></div>
-            </div>
-            <div class="hero-content">
-                <div class="hero-badge">PRECISION ENGINEERED</div>
-                <h1 class="hero-title">
-                    <span class="title-line">Titanium3d</span>
-                        <span class="title-line highlight">Print</span>
-                </h1>
-                <p class="hero-subtitle">Precision Metal Parts, Printed to Perfection. We deliver innovative solutions that drive results.</p>
-                <div class="hero-actions">
-                    <a href="services.html" class="btn btn-primary">Explore Services</a>
-                    <a href="contact.html" class="btn btn-secondary">Get a Quote</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">99.7%</div>
-                        <div class="stat-label">Precision</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support</div>
-                    </div>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="scroll-line"></div>
-                <span>SCROLL</span>
-            </div>
-        </section>
+  <!-- Materials Section -->
+  <section id="materials" class="container">
+    <h2>Titanium Alloys for Demanding Applications</h2>
 
-        <section class="process-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">CAPABILITIES</span>
-                    <h2 class="section-title">Advanced Solutions</h2>
-                </div>
-                <div class="process-grid">
-                    <div class="process-card animate-in">
-                        <div class="card-number">01</div>
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1734596438095-60fa7e178290?w=600&q=80" alt="Service 1" loading="lazy">
-                        </div>
-                        <h3>Service 1</h3>
-                        <p>Professional titanium3d print solutions tailored to your needs.</p>
-                    </div>
-                    <div class="process-card animate-in">
-                        <div class="card-number">02</div>
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1529724778170-491b776b49cc?w=600&q=80" alt="Service 2" loading="lazy">
-                        </div>
-                        <h3>Service 2</h3>
-                        <p>Professional titanium3d print solutions tailored to your needs.</p>
-                    </div>
-                    <div class="process-card animate-in">
-                        <div class="card-number">03</div>
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Service 3" loading="lazy">
-                        </div>
-                        <h3>Service 3</h3>
-                        <p>Professional titanium3d print solutions tailored to your needs.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="grid grid-3">
+      <div class="card material-card">
+        <div class="card-icon" style="background: #E3F2FD; color: #01579B;">⚙️</div>
+        <h3>Ti6Al4V (Grade 5)</h3>
+        <p><strong>Tensile Strength:</strong> 993-1055 MPa</p>
+        <p><strong>Density:</strong> 4.43 g/cm³</p>
+        <p><strong>Heat Resistance:</strong> Up to 600°C continuous service</p>
+        <p>The industry standard for aerospace and medical implants. Exceptional strength-to-weight ratio, superior biocompatibility, and proven performance in surgical applications including hip replacements and spinal fusion devices.</p>
+      </div>
 
-        <section class="materials-section">
-            <div class="container-wide">
-                <div class="materials-content">
-                    <div class="materials-info">
-                        <span class="section-label">CAPABILITIES</span>
-                        <h2>What Sets Us Apart</h2>
-                        <p>We offer a comprehensive range of solutions designed for excellence.</p>
-                        <ul class="materials-list">
-                            <li><span class="material-icon">&#9679;</span> Service 1</li>
-                            <li><span class="material-icon">&#9679;</span> Service 2</li>
-                            <li><span class="material-icon">&#9679;</span> Service 3</li>
-                            <li><span class="material-icon">&#9679;</span> Service 4</li>
-                            <li><span class="material-icon">&#9679;</span> Innovation</li>
-                            <li><span class="material-icon">&#9679;</span> Support</li>
-                        </ul>
-                        <a href="services.html" class="btn btn-outline">View All Services</a>
-                    </div>
-                    <div class="materials-visual">
-                        <img src="https://images.unsplash.com/photo-1592231752639-4a7ffcbc1505?w=600&q=80" alt="Titanium3d Print Services" loading="lazy">
-                        <div class="visual-accent"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="card material-card">
+        <div class="card-icon" style="background: #F3E5F5; color: #4A148C;">💪</div>
+        <h3>Medical-Grade Properties</h3>
+        <p><strong>Biocompatibility:</strong> ASTM F136 Certified</p>
+        <p><strong>Corrosion Resistance:</strong> Excellent in body fluids</p>
+        <p><strong>Osseointegration:</strong> Superior bone-implant bonding</p>
+        <p>Meet ISO 5832-3 and ASTM F136 standards. Our Ti6Al4V achieves 99.5% density post-DMLS with optional HIP treatment for medical device manufacturing. No surface contamination—direct implant quality.</p>
+      </div>
 
-        <section class="industries-section">
-            <div class="container">
-                <div class="section-header center">
-                    <span class="section-label">INDUSTRIES</span>
-                    <h2>Trusted Across Sectors</h2>
-                </div>
-                <div class="industries-grid">
-                    <div class="industry-card animate-in">
-                        <div class="industry-icon">&#9992;</div>
-                        <h3>Aerospace</h3>
-                        <p>Lightweight precision components</p>
-                    </div>
-                    <div class="industry-card animate-in">
-                        <div class="industry-icon">&#43;</div>
-                        <h3>Medical</h3>
-                        <p>Biocompatible solutions</p>
-                    </div>
-                    <div class="industry-card animate-in">
-                        <div class="industry-icon">&#9881;</div>
-                        <h3>Industrial</h3>
-                        <p>Custom tooling and parts</p>
-                    </div>
-                    <div class="industry-card animate-in">
-                        <div class="industry-icon">&#9889;</div>
-                        <h3>Energy</h3>
-                        <p>High-performance systems</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="card material-card">
+        <div class="card-icon" style="background: #FFF3E0; color: #E65100;">🛩️</div>
+        <h3>Aerospace Performance</h3>
+        <p><strong>Build Volume:</strong> Up to 31.5" × 15.7" × 19.7"</p>
+        <p><strong>Tolerance:</strong> ±0.003" + ±0.001"/in</p>
+        <p><strong>Weight Savings:</strong> 40-50% vs traditional manufacturing</p>
+        <p>Replace 20+ discrete components with single integrated parts. GE's fuel nozzle case study: consolidated 20 parts into 1, reduced weight 25%, maintained structural integrity with DMLS-produced titanium.</p>
+      </div>
+    </div>
 
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Ready to Get Started?</h2>
-                <p>Contact us today to discover how Titanium3d Print can help you succeed.</p>
-                <a href="contact.html" class="btn btn-large">Start Your Project</a>
-            </div>
-            <div class="cta-background">
-                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Titanium3d Print" loading="lazy">
-            </div>
-        </section>
-    </main>
+    <div class="stats-grid" style="margin-top: 3rem;">
+      <div class="stat-item">
+        <div class="stat-number">1055</div>
+        <div class="stat-label">Max Tensile Strength (MPa)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">600°C</div>
+        <div class="stat-label">Operating Temperature</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">99.5%</div>
+        <div class="stat-label">Density Achievement</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">0.006"</div>
+        <div class="stat-label">Minimum Feature Size</div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <div class="footer-logo">Titanium3d Print</div>
-                    <p>Precision Metal Parts, Printed to Perfection</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="services.html">Service 1</a></li>
-                            <li><a href="services.html">Service 2</a></li>
-                            <li><a href="services.html">Service 3</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li>info@titanium3dprint.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Titanium3d Print. All rights reserved.</p>
-            </div>
+  <!-- Applications Section -->
+  <section id="applications">
+    <div class="container">
+      <h2>Real-World Applications</h2>
+
+      <div class="feature-row">
+        <div class="feature-image">
+          <img src="images/08-medical-implant.png" alt="Medical titanium implant">
         </div>
-    </footer>
+        <div class="feature-content">
+          <h3>Medical Devices & Implants</h3>
+          <p>Johnson & Johnson and other leading medical device manufacturers specify Ti6Al4V for critical implant components. Our DMLS process achieves the biocompatibility and precision required for patient-specific implants:</p>
+          <ul class="feature-list">
+            <li>Hip and knee replacement components</li>
+            <li>Spinal fusion cages and rods</li>
+            <li>Craniofacial reconstruction plates</li>
+            <li>Dental implants with enhanced osseointegration</li>
+            <li>Surgical instruments with corrosion resistance</li>
+          </ul>
+        </div>
+      </div>
 
-    <script src="js/main.js"></script>
+      <div class="feature-row reverse" style="margin-top: 3rem;">
+        <div class="feature-image">
+          <img src="images/01-titanium-turbine.png" alt="Aerospace turbine component">
+        </div>
+        <div class="feature-content">
+          <h3>Aerospace & Defense</h3>
+          <p>Aircraft engines and defense systems demand titanium's exceptional performance envelope. DMLS titanium production delivers:</p>
+          <ul class="feature-list">
+            <li>Turbine blade attachments with 600°C heat resistance</li>
+            <li>Landing gear components with 50% weight reduction</li>
+            <li>Avionics housings maintaining structural integrity</li>
+            <li>Fuel system components with superior corrosion resistance</li>
+            <li>Missile and satellite structural elements</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature-row" style="margin-top: 3rem;">
+        <div class="feature-image">
+          <img src="images/04-lattice-cube-hands.png" alt="Lattice structure demonstration">
+        </div>
+        <div class="feature-content">
+          <h3>Biomedical Lattice Structures</h3>
+          <p>Lightweight internal lattice structures are impossible with traditional manufacturing. Ti6Al4V enables:</p>
+          <ul class="feature-list">
+            <li>Patient-specific porous implants for bone ingrowth</li>
+            <li>Internal channels <0.30" diameter for cooling</li>
+            <li>90% weight reduction in structural components</li>
+            <li>Controlled void fraction for tissue integration</li>
+            <li>Mechanical property preservation with reduced mass</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process">
+    <div class="container">
+      <h2>DMLS Process for Titanium</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Design Preparation</h4>
+            <p>CAD files analyzed for manufacturability. Titanium-specific considerations: 45° self-supporting angles minimum, 0.020" overhang threshold, removal of internal channels >0.30" diameter. Support structure design optimized for easy removal while maintaining dimensional accuracy.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Powder Atomization & Setup</h4>
+            <p>Pre-alloyed Ti6Al4V powder (40-100 µm particles) loaded into build chamber. Argon atmosphere maintained at <10 ppm oxygen to prevent oxidation. Build platform cleaned and calibrated to ±0.001". Multiple parts arranged for optimal thermal management.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Layer-by-Layer Laser Sintering</h4>
+            <p>Fiber laser (500W or higher) selectively melts powder at 0.050-0.100mm layer thickness. Build chamber temperature maintained 400-600°C to minimize thermal stress. Recoater blade deposits uniform powder bed. Laser parameters: 200-400 µm spot size, 10-20 m/s scan speed.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Stress Relief & HIP Treatment</h4>
+            <p>Post-print stress relief at 950°C, 1-2 hours. Optional Hot Isostatic Pressing (HIP) at 2000°F + 15,000 psi for 3-4 hours eliminates residual porosity, achieving 100% density. Medical implants receive full HIP treatment to ensure zero internal voids.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Finishing & Inspection</h4>
+            <p>Support removal via CNC or EDM. Surface finishing to ±0.001" as required. Solution annealing (1650°F, 30 min) and aging (1150°F, 10 min) for optimal mechanical properties. CT scanning verifies internal structure and density. Tensile testing samples confirm material specifications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section>
+    <div class="container">
+      <h2>Case Studies: Titanium Success Stories</h2>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>GE Aviation Fuel Nozzles</h3>
+          <p><strong>Challenge:</strong> Complex fuel nozzle assembly required 20 separate machined components, complex assembly, high scrap rate.</p>
+          <p><strong>Solution:</strong> Consolidated into single DMLS Ti6Al4V part with integrated cooling channels. Internal passages <0.020" requiring traditional CNC.</p>
+          <p><strong>Results:</strong> 25% weight reduction, 90% assembly labor eliminated, zero internal voids post-HIP, operating successfully at 600°C+ in production engines.</p>
+        </div>
+
+        <div class="card">
+          <h3>Johnson & Johnson Surgical Implants</h3>
+          <p><strong>Challenge:</strong> Patient-specific hip implants required customization for each individual anatomy, traditional manufacturing not feasible.</p>
+          <p><strong>Solution:</strong> CT scans converted to CAD, DMLS produced custom Ti6Al4V implants with optimized lattice structures for bone integration.</p>
+          <p><strong>Results:</strong> 30% improved osseointegration, ASTM F136 biocompatibility verified, 6-month lead time reduced to 6-8 weeks per patient.</p>
+        </div>
+
+        <div class="card">
+          <h3>Defense Aerospace Components</h3>
+          <p><strong>Challenge:</strong> Landing gear components for fighter aircraft required 50% weight reduction while maintaining structural integrity.</p>
+          <p><strong>Solution:</strong> Topology-optimized DMLS Ti6Al4V components with internal lattice structures maintaining load paths.</p>
+          <p><strong>Results:</strong> 48% weight savings, 15% cost reduction per unit, full compatibility with existing mechanical interfaces and fastening systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section>
+    <div class="container">
+      <h2>Latest Titanium 3D Printing News</h2>
+      <div id="news-feed" class="news-feed"></div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="background: linear-gradient(135deg, #455A64, #607D8B); color: white; text-align: center;">
+    <div class="container">
+      <h2 style="color: white;">Ready to Innovate with Titanium 3D Printing?</h2>
+      <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 2rem;">Get a free DFM analysis for your next titanium component</p>
+      <a href="titanium3dprint-contact.html" class="btn" style="background: white; color: #455A64; font-weight: 700; padding: 1rem 2rem; font-size: 1.1rem;">Request Engineering Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Ti3D Aerospace</h4>
+        <p>Premium titanium 3D printing for aerospace, medical, and defense applications.</p>
+        <div class="social-links">
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="Twitter">𝕏</a>
+          <a href="#" title="Email">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="titanium3dprint-index.html">Home</a>
+        <a href="titanium3dprint-about.html">About</a>
+        <a href="titanium3dprint-services.html">Services</a>
+        <a href="titanium3dprint-contact.html">Contact</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Materials</h4>
+        <a href="#materials">Ti6Al4V</a>
+        <a href="#materials">Medical Grade</a>
+        <a href="#applications">Applications</a>
+        <a href="#process">Process</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <a href="#news">Industry News</a>
+        <a href="titanium3dprint-services.html">Design Guidelines</a>
+        <a href="#">Specifications</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ti3D Aerospace. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </div>
+  </footer>
+
+  <script src="shared-metal3d-scripts.js"></script>
 </body>
 </html>
